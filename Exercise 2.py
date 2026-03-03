@@ -43,4 +43,3 @@ tip = price * (percent / 100)
 bill = price + tip
 print("tip is: ", tip)
 print("bill is: ", bill)
-
