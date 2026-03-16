@@ -108,3 +108,17 @@ print(sorted_students)
 words = ["apple", "pie", "banana", "cherry"]
 sorted_words = sorted(words, key=lambda x: len(x))
 print(sorted_words)
+
+
+
+# Exercise:
+# Write a program using lambda functions to check if a number in the given list is odd.
+# Print "True" if the number is odd or "False" for each element.
+
+# Hint
+
+l = [2,4,7,3,14,19]
+odd = lambda x: x % 2 != 0
+
+for num in l:
+  print(num, " is ", odd(num))
