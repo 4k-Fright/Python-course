@@ -38,7 +38,6 @@ b = 200
 if b > a:
     print("b is greater than a")   # you'll get an error
 
-
 # Note: You can use spaces or tabs for indentation, but you must use the same amount of indentation for all statements within the same code block.
 
 

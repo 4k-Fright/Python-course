@@ -4,14 +4,15 @@
 #
 # However, sometimes you may not know how many arguments that will be passed into your function.
 #
-# *args and **kwargs allow functions to accept a unknown number of arguments.
-#
+# *args and **kwargs allow functions to accept an unknown number of arguments.
+
+
 # Arbitrary Arguments - *args
 # If you do not know how many arguments will be passed into your function, add a * before the parameter name.
 #
 # This way, the function will receive a tuple of arguments and can access the items accordingly:
 #
-# ExampleGet your own Python Server
+# Example:
 # Using *args to accept any number of arguments:
 
 def my_function(*kids):
@@ -38,8 +39,8 @@ def my_function(*args):
 
 my_function("Emil", "Tobias", "Linus")
 
-# REMOVE ADS
-#
+
+
 # Using *args with Regular Arguments
 # You can combine regular parameters with *args.
 #
@@ -82,6 +83,9 @@ def my_function(*numbers):
   return max_num
 
 print(my_function(3, 7, 2, 9, 1))
+
+
+
 # Arbitrary Keyword Arguments - **kwargs
 # If you do not know how many keyword arguments will be passed into your function, add two asterisks ** before the parameter name.
 #
@@ -94,6 +98,8 @@ def my_function(**kid):
   print("His last name is " + kid["lname"])
 
 my_function(fname = "Tobias", lname = "Refsnes")
+
+
 # Arbitrary Keyword Arguments are often shortened to **kwargs in Python documentation.
 #
 # What is **kwargs?
@@ -111,6 +117,9 @@ def my_function(**myvar):
   print("All data:", myvar)
 
 my_function(name = "Tobias", age = 30, city = "Bergen")
+
+
+
 # Using **kwargs with Regular Arguments
 # You can combine regular parameters with **kwargs.
 #
@@ -124,6 +133,8 @@ def my_function(username, **details):
     print(" ", key + ":", value)
 
 my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
+
+
 # Combining *args and **kwargs
 # You can use both *args and **kwargs in the same function.
 #
@@ -132,6 +143,7 @@ my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
 # regular parameters
 # *args
 # **kwargs
+
 # Example
 def my_function(title, *args, **kwargs):
   print("Title:", title)

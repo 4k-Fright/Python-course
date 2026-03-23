@@ -60,7 +60,8 @@ for i in range(10):
 #
 # Example
 # Convert different ranges to lists:
-
+range(5)
+list(range(5))  # [0,1,2,3,4]
 print(list(range(5)))
 print(list(range(1, 6)))
 print(list(range(5, 20, 3)))
@@ -75,6 +76,7 @@ print(list(range(5, 20, 3)))
 r = range(10)
 print(r[2])
 print(r[:3])
+print(list(r[:3]))
 
 # Note: The first print statement returns the value at index 2, and the second print statement returns a new range object, from index 0 to 3.
 # Membership Testing

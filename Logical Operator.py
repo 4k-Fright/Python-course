@@ -25,5 +25,3 @@ print(y < 5 or y > 10)
 
 z = 5
 print(not(z > 3 and z < 10))
-
-

@@ -36,6 +36,8 @@ def count_up_to(n):
 
 for num in count_up_to(5):
   print(num)
+
+
 # Unlike return, which terminates the function, yield pauses it and can be called multiple times.
 #
 #
@@ -78,10 +80,10 @@ def simple_gen():
   yield 1
   yield 2
 
-gen = simple_gen()
-print(next(gen))
-print(next(gen))
-print(next(gen)) # This will raise StopIteration
+ben = simple_gen()
+print(next(ben))
+print(next(ben))
+# print(next(gen)) # This will raise StopIteration
 
 
 #
